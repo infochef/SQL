@@ -1,0 +1,161 @@
+1. What is DBMS?
+
+2. What is RDBMS?
+
+3. What is SQL?
+
+SQL stands for Structured Query Language , and it is used to communicate with the Database. 
+This is a standard language used to perform tasks such as retrieval, updation, insertion and deletion of data from a database.
+
+4. What is a Database?
+
+Example: School Management Database, Bank Management Database.
+
+5. What are tables and Fields?
+
+6. What is a primary key?
+
+A primary key is a combination of fields which uniquely specify a row. This is a special kind of unique key, and it has implicit NOT NULL constraint.
+ It means, Primary key values cannot be NULL.
+
+7. What is a unique key?
+
+8. What is a foreign key?
+
+9. What is a join?
+
+10. What are the types of join and explain each?
+
+11. What is normalization?
+
+Normalization is the process of minimizing redundancy and dependency by organizing fields and table of a database.
+ The main aim of Normalization is to add, delete or modify field that can be made in a single table.
+
+12. What are all the different normalizations?
+
+
+13. What is a relationship and what are they?(CARDINALITY RATIOS)
+
+Database Relationship is defined as the connection between the tables in a database. There are various data basing relationships, 
+and they are as follows:.
+
+One to One Relationship.
+One to Many Relationship.
+Many to One Relationship.
+Self-Referencing Relationship.
+
+14. What is a query?
+
+A DB query is a code written in order to get the information back from the database.
+Query can be designed in such a way that it matched with our expectation of the result set.
+Simply, a question to the Database.
+
+
+15. What is subquery?
+
+A subquery is a query within another query. 
+The outer query is called as main query, and inner query is called subquery.
+SubQuery is always executed first, and the result of subquery is passed on to the main query.
+
+16. What are the types of subquery?
+
+There are two types of subquery – Correlated and Non-Correlated.
+
+A correlated subquery cannot be considered as independent query, but it can refer the column in a table listed in the FROM the list of the main query.
+
+A Non-Correlated sub query can be considered as independent query and the output of subquery are substituted in the main query.
+
+17.Difference between WHERE and HAVING clause.
+
+18.Difference between SRF and MRF .
+
+19. What is the difference between DELETE and TRUNCATE commands?
+
+DELETE command is used to remove rows from the table, and WHERE clause can be used for conditional set of parameters. 
+Commit and Rollback can be performed after delete statement.
+
+TRUNCATE removes all rows from the table. Truncate operation cannot be rolled back.
+
+20. What is a constraint?
+
+Constraint can be used to specify the limit on the data type of table.
+Constraint can be specified while creating or altering the table statement. Sample of constraint are.
+
+NOT NULL.
+CHECK.
+UNIQUE.
+PRIMARY KEY.
+FOREIGN KEY.
+
+21. What is data Integrity?
+
+Data Integrity defines the accuracy and consistency of data stored in a database. 
+It can also define integrity constraints to enforce business rules on the data when it is entered into the application or database.
+
+
+
+22. What is Datawarehouse?
+
+Datawarehouse is a central repository of data from multiple sources of information.
+Those data are consolidated, transformed and made available for the mining and online processing.
+Warehouse data have a subset of data called Data Marts.
+
+23. What is Self-Join?
+
+Self-join is set to be query used to compare to itself. 
+
+24. What is Cross-Join?
+
+Cross join defines as Cartesian product where number of rows in the first table multiplied by number of rows in the second table. 
+
+
+25. What is Union, minus and Interact commands?
+
+UNION operator is used to combine the results of two tables, and it eliminates duplicate rows from the tables.
+
+MINUS operator is used to return rows from the first query but not from the second query. 
+Matching records of first and second query and other rows from the first query will be displayed as a result set.
+
+INTERSECT operator is used to return rows returned by both the queries.
+
+26. What is an ALIAS command?
+
+27. What is the difference between TRUNCATE and DROP statements?
+
+TRUNCATE removes all the rows from the table, and it cannot be rolled back.
+DROP command removes a table from the database and operation cannot be rolled back.
+
+28. What are aggregate functions?
+
+Aggregate functions are used to evaluate mathematical calculation and return single values.
+This can be calculated from the columns in a table.
+
+
+29. How can you create an empty table from an existing table?
+
+Example will be -.
+
+Select * into studentcopy from student where 1=2
+Here, we are copying student table to another table with the same structure with no rows copied.
+
+30. How to select unique records from a table?
+
+Select unique records from a table by using DISTINCT keyword.
+
+Select DISTINCT StudentID, StudentName from Student.
+
+31. What is the command used to fetch first 5 characters of the string?
+
+There are many ways to fetch first 5 characters of the string -.
+
+Select SUBSTRING(StudentName,1,5) as studentname from student
+
+32. Which operator is used in query for pattern matching?
+
+LIKE operator is used for pattern matching, and it can be used as -.
+
+% - Matches zero or more characters.
+_(Underscore) – Matching exactly one character.
+
+33.What are DML statements 
+
